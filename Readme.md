@@ -1,7 +1,7 @@
 # Readme
 This repo hosts a collection of scripts that make use of the [Bitcoin Development Kit](https://bitcoindevkit.org/) and some of its language bindings.
 
-_Total number of scripts: 10_
+_Total number of scripts: 12_
 
 ## Rust Scripts
 To run Rust scripts, you'll the need the [rust-script](https://rust-script.org/) tool installed. From there, simply use
@@ -25,10 +25,12 @@ python 1.balance.py
 ## Table of Contents
 
 ### Rust
-| Language | File                                                      | Task                                                      |
-|----------|-----------------------------------------------------------|-----------------------------------------------------------|
-| Rust     | [1.balance.rs](rust/1.balance.rs)                         | Query an Electrum server for the balance of a wallet.     |
-| Rust     | [2.descriptortemplates.rs](rust/2.descriptortemplates.rs) | Create public descriptors using the descriptor templates. |
+| Language | File                                                        | Task                                                     |
+|----------|-------------------------------------------------------------|----------------------------------------------------------|
+| Rust     | [1.balance.rs](rust/1.balance.rs)                           | Query an Electrum server for the balance of a wallet.    |
+| Rust     | [2.descriptor-templates.rs](rust/2.descriptor-templates.rs) | Create public descriptors using the descriptor templates. |
+| Rust     | [3.balance-from-rpc.rs](rust/3.balance-from-rpc.rs)         | Query a full node through RPC for the balance of a descriptor. |
+<br/>
 
 ### Kotlin
 | Language | File                                                                              | Task                                                                              |
@@ -39,7 +41,9 @@ python 1.balance.py
 | Kotlin   | [4.opreturn.main.kts](kotlin/4.opreturn.main.kts)                                 | Create a transaction with an OP_RETURN output.                                    |
 | Kotlin   | [5.listunspentutxo.main.kts](kotlin/5.listunspentutxo.main.kts)                   | List the unspent outputs this wallet controls.                                    |
 | Kotlin   | [6.descriptor-from-mnemonic.main.kts](kotlin/6.descriptor-from-mnemonic.main.kts) | Create a BIP84 descriptor starting from a 12-word mnemonic.                       |
+<br/>
 
+### Python
 | Language | File                                                            | Task                                                                              |
 |----------|-----------------------------------------------------------------|-----------------------------------------------------------------------------------|
 | Python   | [1.balance.py](python/1.balance.py)                             | Query an Electrum server for the balance of a wallet.                             |
