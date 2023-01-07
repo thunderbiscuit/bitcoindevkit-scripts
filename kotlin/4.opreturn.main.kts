@@ -25,7 +25,7 @@ object LogProgress : Progress {
     }
 }
 
-val descriptor = "wpkh([5fa993c4/84'/1'/0'/0]tprv8hwWMmPE4BVNxGdVt3HhEERZhondQvodUY7Ajyseyhudr4WabJqWKWLr4Wi2r26CDaNCQhhxEftEaNzz7dPGhWuKFU4VULesmhEfZYyBXdE/0/*)"
+val descriptor = "wpkh(tprv8ZgxMBicQKsPf2qfrEygW6fdYseJDDrVnDv26PH5BHdvSuG6ecCbHqLVof9yZcMoM31z9ur3tTYbSnr1WBqbGX97CbXcmp5H6qeMpyvx35B/84h/1h/0h/0/*)"
 val wallet = Wallet(descriptor, null, Network.TESTNET, memoryDatabaseConfig)
 val blockchain = Blockchain(blockchainConfig);
     

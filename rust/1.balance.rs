@@ -2,7 +2,7 @@
 
 //! bdk 0.26.0
 //! 
-//! Query an Electrum server for the total balance of a wallet.
+//! Query an Electrum server for the balance of a wallet.
 //! 
 //! ```cargo
 //! [dependencies]
