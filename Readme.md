@@ -1,6 +1,8 @@
 # Readme
 This repo hosts a collection of scripts that make use of the [Bitcoin Development Kit](https://bitcoindevkit.org/) and some of its language bindings.
 
+_Total number of scripts: 10_
+
 ## Rust Scripts
 To run Rust scripts, you'll the need the [rust-script](https://rust-script.org/) tool installed. From there, simply use
 ```shell
@@ -21,20 +23,22 @@ python 1.balance.py
 ```
 
 ## Table of Contents
-_Total number of scripts: 10_
 
-| Language | File                                                            | Task                                                                              |
-|----------|-----------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| Rust     | [1.balance.rs](rust/1.balance.rs)                               | Query an Electrum server for the balance of a wallet.                             |
-| Rust     | [2.descriptortemplates.rs](rust/2.descriptortemplates.rs)       | Create public descriptors using the descriptor templates.                         |
+### Rust
+| Language | File                                                      | Task                                                      |
+|----------|-----------------------------------------------------------|-----------------------------------------------------------|
+| Rust     | [1.balance.rs](rust/1.balance.rs)                         | Query an Electrum server for the balance of a wallet.     |
+| Rust     | [2.descriptortemplates.rs](rust/2.descriptortemplates.rs) | Create public descriptors using the descriptor templates. |
 
-| Language | File                                                            | Task                                                                              |
-|----------|-----------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| Kotlin   | [1.balance.main.kts](kotlin/1.balance.main.kts)                 | Query an Electrum server for the balance of a wallet.                             |
-| Kotlin   | [2.blockinfo.main.kts](kotlin/2.blockinfo.main.kts)             | Query an Electrum server for the testnet blockchain height and latest block hash. |
-| Kotlin   | [3.getaddress.main.kts](kotlin/3.getaddress.main.kts)           | Get an unused address from a wallet.                                              |
-| Kotlin   | [4.opreturn.main.kts](kotlin/4.opreturn.main.kts)               | Create a transaction with an OP_RETURN output.                                    |
-| Kotlin   | [5.listunspentutxo.main.kts](kotlin/5.listunspentutxo.main.kts) | List the unspent outputs this wallet controls.                                    |
+### Kotlin
+| Language | File                                                                              | Task                                                                              |
+|----------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| Kotlin   | [1.balance.main.kts](kotlin/1.balance.main.kts)                                   | Query an Electrum server for the balance of a wallet.                             |
+| Kotlin   | [2.blockinfo.main.kts](kotlin/2.blockinfo.main.kts)                               | Query an Electrum server for the testnet blockchain height and latest block hash. |
+| Kotlin   | [3.getaddress.main.kts](kotlin/3.getaddress.main.kts)                             | Get an unused address from a wallet.                                              |
+| Kotlin   | [4.opreturn.main.kts](kotlin/4.opreturn.main.kts)                                 | Create a transaction with an OP_RETURN output.                                    |
+| Kotlin   | [5.listunspentutxo.main.kts](kotlin/5.listunspentutxo.main.kts)                   | List the unspent outputs this wallet controls.                                    |
+| Kotlin   | [6.descriptor-from-mnemonic.main.kts](kotlin/6.descriptor-from-mnemonic.main.kts) | Create a BIP84 descriptor starting from a 12-word mnemonic.                       |
 
 | Language | File                                                            | Task                                                                              |
 |----------|-----------------------------------------------------------------|-----------------------------------------------------------------------------------|
