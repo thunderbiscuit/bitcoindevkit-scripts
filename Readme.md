@@ -21,7 +21,7 @@ python 1.balance.py
 ```
 
 ## Table of Contents
-_Total number of scripts: 9_
+_Total number of scripts: 10_
 
 | Language | File                                                            | Task                                                                              |
 |----------|-----------------------------------------------------------------|-----------------------------------------------------------------------------------|
@@ -34,3 +34,4 @@ _Total number of scripts: 9_
 | Kotlin   | [5.listunspentutxo.main.kts](kotlin/5.listunspentutxo.main.kts) | List the unspent outputs this wallet controls.                                    |
 | Python   | [1.balance.py](python/1.balance.py)                             | Query an Electrum server for the balance of a wallet.                             |
 | Python   | [2.blockinfo.py](python/2.blockinfo.py)                         | Query an Electrum server for the testnet blockchain height and latest block hash. |
+| Python   | [2.getaddress.py](python/3.getaddress.py)                       | Get new addresses from a wallet.                                                  |

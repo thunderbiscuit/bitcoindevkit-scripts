@@ -25,12 +25,6 @@ wallet = bdk.Wallet(
              database_config=db_config,
          )
 
-# print new receive address
-address_info = wallet.get_address(bdk.AddressIndex.LAST_UNUSED)
-address = address_info.address
-index = address_info.index
-print(f"New BIP84 testnet address: {address} at index {index}")
-
 # print wallet balance
 wallet.sync(blockchain, None)
 balance = wallet.get_balance()
