@@ -40,4 +40,4 @@ _Total number of scripts: 10_
 |----------|-----------------------------------------------------------------|-----------------------------------------------------------------------------------|
 | Python   | [1.balance.py](python/1.balance.py)                             | Query an Electrum server for the balance of a wallet.                             |
 | Python   | [2.blockinfo.py](python/2.blockinfo.py)                         | Query an Electrum server for the testnet blockchain height and latest block hash. |
-| Python   | [2.getaddress.py](python/3.getaddress.py)                       | Get new addresses from a wallet.                                                  |
+| Python   | [3.getaddress.py](python/3.getaddress.py)                       | Get new addresses from a wallet.                                                  |
