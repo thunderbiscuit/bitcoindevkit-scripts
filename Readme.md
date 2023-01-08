@@ -1,7 +1,7 @@
 # Readme
 This repo hosts a collection of scripts that make use of the [Bitcoin Development Kit](https://bitcoindevkit.org/) and some of its language bindings.
 
-_Total number of scripts: 12_
+_Total number of scripts: 13_
 
 ## Rust Scripts
 To run Rust scripts, you'll the need the [rust-script](https://rust-script.org/) tool installed. From there, simply use
@@ -25,11 +25,12 @@ python 1.balance.py
 ## Table of Contents
 
 ### Rust
-| Language | File                                                        | Task                                                     |
-|----------|-------------------------------------------------------------|----------------------------------------------------------|
-| Rust     | [1.balance.rs](rust/1.balance.rs)                           | Query an Electrum server for the balance of a wallet.    |
-| Rust     | [2.descriptor-templates.rs](rust/2.descriptor-templates.rs) | Create public descriptors using the descriptor templates. |
+| Language | File                                                        | Task                                                           |
+|----------|-------------------------------------------------------------|----------------------------------------------------------------|
+| Rust     | [1.balance.rs](rust/1.balance.rs)                           | Query an Electrum server for the balance of a wallet.          |
+| Rust     | [2.descriptor-templates.rs](rust/2.descriptor-templates.rs) | Create public descriptors using the descriptor templates.      |
 | Rust     | [3.balance-from-rpc.rs](rust/3.balance-from-rpc.rs)         | Query a full node through RPC for the balance of a descriptor. |
+| Rust     | [4.miniscript-policy.rs](rust/4.miniscript-policy.rs)       | Print miniscript policy for a non-trivial descriptor.          |
 <br/>
 
 ### Kotlin
