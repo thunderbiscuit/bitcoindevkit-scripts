@@ -2,7 +2,7 @@
 
 //! bdk 0.26.0
 //!
-//! Print miniscript policy for a non-trivial descriptor.
+//! Print the BDK policy for a non-trivial descriptor.
 //!
 //! ```cargo
 //! [dependencies]
