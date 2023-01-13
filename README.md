@@ -35,14 +35,15 @@ python 1.balance.py
 <br/>
 
 ### Kotlin
-| Language | File                                                                              | Task                                                                              |
-|----------|-----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| Kotlin   | [1.balance.main.kts](kotlin/1.balance.main.kts)                                   | Query an Electrum server for the balance of a wallet.                             |
-| Kotlin   | [2.blockinfo.main.kts](kotlin/2.blockinfo.main.kts)                               | Query an Electrum server for the testnet blockchain height and latest block hash. |
-| Kotlin   | [3.getaddress.main.kts](kotlin/3.getaddress.main.kts)                             | Get an unused address from a wallet.                                              |
-| Kotlin   | [4.opreturn.main.kts](kotlin/4.opreturn.main.kts)                                 | Create a transaction with an OP_RETURN output.                                    |
-| Kotlin   | [5.listunspentutxo.main.kts](kotlin/5.listunspentutxo.main.kts)                   | List the unspent outputs this wallet controls.                                    |
-| Kotlin   | [6.descriptor-from-mnemonic.main.kts](kotlin/6.descriptor-from-mnemonic.main.kts) | Create a BIP84 descriptor starting from a 12-word mnemonic.                       |
+| Language | File                                                                                  | Task                                                                              |
+|----------|---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| Kotlin   | [1.balance.main.kts](kotlin/1.balance.main.kts)                                       | Query an Electrum server for the balance of a wallet.                             |
+| Kotlin   | [2.blockinfo.main.kts](kotlin/2.blockinfo.main.kts)                                   | Query an Electrum server for the testnet blockchain height and latest block hash. |
+| Kotlin   | [3.getaddress.main.kts](kotlin/3.getaddress.main.kts)                                 | Get an unused address from a wallet.                                              |
+| Kotlin   | [4.opreturn.main.kts](kotlin/4.opreturn.main.kts)                                     | Create a transaction with an OP_RETURN output.                                    |
+| Kotlin   | [5.listunspentutxo.main.kts](kotlin/5.listunspentutxo.main.kts)                       | List the unspent outputs this wallet controls.                                    |
+| Kotlin   | [6.descriptor-from-mnemonic.main.kts](kotlin/6.descriptor-from-mnemonic.main.kts)     | Create a BIP84 descriptor starting from a 12-word mnemonic.                       |
+| Kotlin   | [7.public-descriptor-template.main.kts](kotlin/7.public-descriptor-template.main.kts) | Create a public descriptor using descriptor templates.                            |
 <br/>
 
 ### Python
