@@ -15,6 +15,17 @@ You can call Kotlin scripts directly like so:
 kotlin 1.balance.main.kts
 ```
 
+To use a dependency that only exists in your local Maven repository, add the path to your local Maven at the top of the file like so: 
+```kotlin
+@file:Repository("file:///~/.m2/repository/")
+@file:DependsOn("org.bitcoindevkit:bdk-jvm:0.27.0-SNAPSHOT")
+
+import org.bitcoindevkit.*
+
+// ...
+
+```
+
 ## Python Scripts
 Python is easy! Just make sure you have the correct packages installed.
 ```shell
