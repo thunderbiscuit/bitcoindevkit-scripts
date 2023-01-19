@@ -36,13 +36,14 @@ python 1.balance.py
 ## Table of Contents
 
 ### Rust
-| Language | File                                                            | Task                                                           |
-|----------|-----------------------------------------------------------------|----------------------------------------------------------------|
-| Rust     | [1.balance.rs](rust/1.balance.rs)                               | Query an Electrum server for the balance of a wallet.          |
-| Rust     | [2.descriptor-templates.rs](rust/2.descriptor-templates.rs)     | Create public descriptors using the descriptor templates.      |
-| Rust     | [3.balance-from-rpc.rs](rust/3.balance-from-rpc.rs)             | Query a full node through RPC for the balance of a descriptor. |
-| Rust     | [4.bdk-policy.rs](rust/4.bdk-policy.rs)                         | Print the BDK policy for a non-trivial descriptor.             |
-| Rust     | [5.miniscript-compilation.rs](rust/5.miniscript-compilation.rs) | Build a BDK wallet starting from a miniscript policy.          |
+| Language | File                                                            | Task                                                                                 |
+|----------|-----------------------------------------------------------------|--------------------------------------------------------------------------------------|
+| Rust     | [1.balance.rs](rust/1.balance.rs)                               | Query an Electrum server for the balance of a wallet.                                |
+| Rust     | [2.descriptor-templates.rs](rust/2.descriptor-templates.rs)     | Create public descriptors using the descriptor templates.                            |
+| Rust     | [3.balance-from-rpc.rs](rust/3.balance-from-rpc.rs)             | Query a full node through RPC for the balance of a descriptor.                       |
+| Rust     | [4.bdk-policy.rs](rust/4.bdk-policy.rs)                         | Print the BDK policy for a non-trivial descriptor.                                   |
+| Rust     | [5.miniscript-compilation.rs](rust/5.miniscript-compilation.rs) | Build a BDK wallet starting from a miniscript policy.                                |
+| Rust     | [6.fee-estimation.rs](rust/6.fee-estimation.rs)                 | Estimate the fee rate required to confirm a transaction in a given target of blocks. |
 <br/>
 
 ### Kotlin
