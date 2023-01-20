@@ -1,0 +1,10 @@
+{
+	"keys" : {
+		"pubkey1" : "[22739455/84'/1'/0']tpubDDEqu57tdMjDiQhEobb2P2X8G6XMH1Vrrq3yhJmNSJtRT5gLLzAsXpFiKLGHPTDREkkeFaAmuzaDkCF4Kj9iMJggXLb48QyBwwP9CK94iZa/0/*",
+		"pubkey2" : "[3a686ab9/84'/1'/0']tpubDDAf2xGr2RqMHQwJBaYqYDr4dA3pYtgM1aCw9PeHSoUEQd9RYPKcjvZW42QT2cvNHHxa74NYcfw3jbyfZGWWwFJNWYHqXRVkp32jG2q1UjB/0/*",
+		"pubkey3" : "[90e343cc/84'/1'/0'/0]tpubDFhuJBvU6ajt4LSTFjX3SRLhWzsZazEbVuL8eaa91dHSq4n8WUjHDUoGNNXSBWyufh83zsBQhkRwk8mmAERbGQQhgUM6Nm3S1c5h1GG5uf5/*",
+		"pubkey4" : "[44eeebb2/84'/1'/0'/0]tpubDFStCq8evTuo4BQSdXKvjmKvXMasypdr17WfnpT7zfPE45gAJfqhFVdjXf43MbqymqMWhLyLfjQkqwRKFPsPRJAGLjXX7DqeWWEocAwccMH/*",
+		"pubkey5" : "[df19b3b1/84'/1'/0'/0]tpubDEu2VoQEB3RyLRXzYvGR3YzVQypeF7iLUk9r4FqLM9NRcYVc5b4VfECrXq4np4s5tvSg6ZPGaSpEknjk8sKR2H5VJm9Bo9CcFPQ6ZXA7Yza/*"
+	},
+	"policy" : "and(pk($PUBKEY1),or(99@pk($PUBKEY2),or(after(10000),99@and(older(5),thresh(2,pk($PUBKEY3),pk($PUBKEY4),pk($PUBKEY5))))))"
+}
