@@ -1,8 +1,11 @@
-# bdkpython 0.25.0
-# 
+# bdkpython 0.26.0
+#
 # Query an Electrum server for the testnet blockchain height and latest block hash.
 
 import bdkpython as bdk
+from utilities import check_bdk_version
+
+check_bdk_version(original_major_version=0, original_minor_version=26)
 
 blockchain_config = bdk.BlockchainConfig.ELECTRUM(
     bdk.ElectrumConfig(
