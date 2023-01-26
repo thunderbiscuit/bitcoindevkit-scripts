@@ -1,9 +1,11 @@
-# bdkpython 0.25.0
+# bdkpython 0.26.0
 # 
 # Query an Electrum server for the total balance of a wallet.
 
 import bdkpython as bdk
+from utilities import check_bdk_version
 
+check_bdk_version(original_major_version=0, original_minor_version=26)
 
 descriptor = bdk.Descriptor(
     "wpkh([c258d2e4/84h/1h/0h]tpubDDYkZojQFQjht8Tm4jsS3iuEmKjTiEGjG6KnuFNKKJb5A6ZUCUZKdvLdSDWofKi4ToRCwb9poe1XdqfUnP4jaJjCB2Zwv11ZLgSbnZSNecE/0/*)",
