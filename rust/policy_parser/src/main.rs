@@ -98,6 +98,14 @@ fn get_policy_descriptions(policy: &Policy, depth: u32) -> serde_json::Value {
             }
             Some(json!(policy_descriptions))
         }
+        SatisfiableItem::Multisig {keys, threshold: _} => {
+            let mut policy_descriptions:Vec<serde_json::Value> = Vec::new();
+
+            for key in keys {
+                policy_descriptions.push(json!(&display_key(key)));
+            }
+            Some(json!(policy_descriptions))
+        }
         _ => None,
     };
 
