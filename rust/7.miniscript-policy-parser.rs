@@ -17,7 +17,7 @@
 //! 		"pubkey4" : "[44eeebb2/84'/1'/0'/0]tpubDFStCq8evTuo4BQSdXKvjmKvXMasypdr17WfnpT7zfPE45gAJfqhFVdjXf43MbqymqMWhLyLfjQkqwRKFPsPRJAGLjXX7DqeWWEocAwccMH/*",
 //! 		"pubkey5" : "[df19b3b1/84'/1'/0'/0]tpubDEu2VoQEB3RyLRXzYvGR3YzVQypeF7iLUk9r4FqLM9NRcYVc5b4VfECrXq4np4s5tvSg6ZPGaSpEknjk8sKR2H5VJm9Bo9CcFPQ6ZXA7Yza/*"
 //! 	},
-//! 	"policy" : "and(pk($PUBKEY1),or(99@pk($PUBKEY2),or(after(10000),99@and(older(5),thresh(2,pk($PUBKEY3),pk($PUBKEY4),pk($PUBKEY5))))))"
+//! 	"policy" : "and(pk($PUBKEY1),or(pk($PUBKEY2),or(after(10000),and(older(5),thresh(2,pk($PUBKEY3),pk($PUBKEY4),pk($PUBKEY5))))))"
 //! }
 //! ```
 //! 
