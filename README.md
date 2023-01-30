@@ -1,13 +1,15 @@
 # Readme
 This repo hosts a collection of scripts that make use of the [Bitcoin Development Kit](https://bitcoindevkit.org/) and some of its language bindings.
 
-_Total number of scripts: 14_
+_Total number of scripts: 17_  
+<br/>
 
 ## Rust Scripts
 To run Rust scripts, you'll the need the [rust-script](https://rust-script.org/) tool installed. From there, simply use
 ```shell
 rust-script 1.balance.rs
 ```
+<br/>
 
 ## Kotlin Scripts
 You can call Kotlin scripts directly like so:
@@ -25,13 +27,15 @@ import org.bitcoindevkit.*
 // ...
 
 ```
+<br/>
 
 ## Python Scripts
-Python is easy! Just make sure you have the correct packages installed.
+Python is easy! Just make sure you have the correct version of the library installed. The `check_bdk_version()` utility function will throw a warning if your version of the library is not the one defined in the script.
 ```shell
 pip3 install bdkpython
 python 1.balance.py
 ```
+<br/>
 
 ## Swift Scripts
 The Swift scripts in this repository use the [swift sh](https://github.com/mxcl/swift-sh) tool, which allows to integrate 3rd-party dependencies in scripts easily. You can install the tool using brew:
@@ -43,6 +47,7 @@ From there, simply run the scripts using the following pattern on your command l
 ```shell
 swift sh balance.swift
 ```
+<br/>
 
 ## Table of Contents
 | Language | File                                                                                  | Task                                                                                 |
