@@ -20,7 +20,7 @@ val bip32RootKey: DescriptorSecretKey = DescriptorSecretKey(
 val bip84ExternalPath: DerivationPath = DerivationPath("m/84h/1h/0h/0")
 val externalExtendedKey: String = bip32RootKey.extend(bip84ExternalPath).asString()
 
-// To create the descriptor you'll need to use this extended key in a descriptor function, i.e. wpkh(), tr(), etc.
+// To create the descriptor you'll need to use this extended key in a descriptor script expression, i.e. wpkh(), wsh(), tr(), etc.
 // Here we create a BIP84-compatible descriptor, so P2PWKH
 val descriptor = "wpkh($externalExtendedKey)"
 
