@@ -1,7 +1,7 @@
 # Readme
 This repo hosts a collection of scripts that make use of the [Bitcoin Development Kit](https://bitcoindevkit.org/) and some of its language bindings.
 
-_Total number of scripts: 18_  
+_Total number of scripts: 20_  
 <br/>
 
 ## Rust Scripts
@@ -66,6 +66,7 @@ swift sh balance.swift
 | Kotlin   | [5.listunspentutxo.main.kts](kotlin/5.listunspentutxo.main.kts)                       | List the unspent outputs this wallet controls.                                       |
 | Kotlin   | [6.descriptor-from-mnemonic.main.kts](kotlin/6.descriptor-from-mnemonic.main.kts)     | Create a BIP84 descriptor starting from a 12-word mnemonic.                          |
 | Kotlin   | [7.public-descriptor-template.main.kts](kotlin/7.public-descriptor-template.main.kts) | Create a public descriptor using descriptor templates.                               |
+| Kotlin   | [8.transaction-details.main.kts](kotlin/8.transaction-details.main.kts)             | Print transaction details for each transaction the wallet has completed.             |
 | Python   | [1.balance.py](python/1.balance.py)                                                   | Query an Electrum server for the balance of a wallet.                                |
 | Python   | [2.blockinfo.py](python/2.blockinfo.py)                                               | Query an Electrum server for the testnet blockchain height and latest block hash.    |
 | Python   | [3.getaddress.py](python/3.getaddress.py)                                             | Get new addresses from a wallet.                                                     |
