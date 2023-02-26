@@ -45,7 +45,7 @@ brew install swift-sh
 
 From there, simply run the scripts using the following pattern on your command line:
 ```shell
-swift sh balance.swift
+swift sh 1.balance.swift
 ```
 <br/>
 
