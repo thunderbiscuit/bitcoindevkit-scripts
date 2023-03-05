@@ -21,7 +21,7 @@ do {
     let blockHeight: UInt32 = try blockchain.getHeight()
     let blockHash: String = try blockchain.getBlockHash(height: blockHeight)
     
-    print("Latest block is block $blockHeight with hash \(blockHash)")
+    print("Latest block is block \(blockHeight) with hash \(blockHash)")
 } catch {
     print(error)
 }
