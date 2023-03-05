@@ -97,6 +97,8 @@ swift sh 1.balance.swift
 | File                                                                                    | Task                                                                                                                          |
 |-----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | [1.balance.swift](swift/1.balance.swift)                                                | Query an Electrum server for the balance of a wallet.                                                                         |
+| [2.blockinfo.swift](swift/2.blockinfo.swift)                                     | Query an Electrum server for the testnet blockchain height and latest block hash.                                             |
+| [3.getaddress.swift](swift/3.getaddress.swift)                                   | Get an unused address from a wallet.                                                                                          |
 
 <br/><br/>
 
