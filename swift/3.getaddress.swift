@@ -1,6 +1,6 @@
 #!/usr/bin/swift sh
 
-import BitcoinDevKit  // https://github.com/bitcoindevkit/bdk-swift.git ~0.26.0
+import BitcoinDevKit  // https://github.com/bitcoindevkit/bdk-swift.git == 0.26.0
 
 class LogProgress : BitcoinDevKit.Progress {
     func update(progress: Float, message: String?) {
