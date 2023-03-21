@@ -1,7 +1,7 @@
 # Readme
 This repo hosts a collection of scripts that make use of the [Bitcoin Development Kit](https://bitcoindevkit.org/) and some of its language bindings.
 
-_Total number of scripts: 23_  
+_Total number of scripts: 24_  
 <br/>
 
 ## Rust Scripts
@@ -100,7 +100,7 @@ swift sh 1.balance.swift
 | [1.balance.swift](swift/1.balance.swift)                                                | Query an Electrum server for the balance of a wallet.                                                                         |
 | [2.blockinfo.swift](swift/2.blockinfo.swift)                                            | Query an Electrum server for the testnet blockchain height and latest block hash.                                             |
 | [3.getaddress.swift](swift/3.getaddress.swift)                                          | Get an unused address from a wallet.                                                                                          |
-
+| [4.opreturn.swift](swift/4.opreturn.swift)                                       | Create a transaction with an OP_RETURN output.                                                                                |
 <br/><br/>
 
 <div align="center">
