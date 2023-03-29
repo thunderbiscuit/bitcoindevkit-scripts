@@ -101,7 +101,7 @@ swift sh 1.balance.swift
 | [2.blockinfo.swift](swift/2.blockinfo.swift)                                            | Query an Electrum server for the testnet blockchain height and latest block hash.                                             |
 | [3.getaddress.swift](swift/3.getaddress.swift)                                          | Get an unused address from a wallet.                                                                                          |
 | [4.opreturn.swift](swift/4.opreturn.swift)                                       | Create a transaction with an OP_RETURN output.                                                                                |
-| [5.listunspentutxo.swift](kotlin/5.listunspentutxo.swift)                         | List the unspent outputs this wallet controls.                                                                                |
+| [5.listunspentutxo.swift](swift/5.listunspentutxo.swift)                         | List the unspent outputs this wallet controls.                                                                                |
 <br/><br/>
 
 <div align="center">
