@@ -1,7 +1,7 @@
 # Readme
 This repo hosts a collection of scripts that make use of the [Bitcoin Development Kit](https://bitcoindevkit.org/) and some of its language bindings.
 
-_Total number of scripts: 25_  
+_Total number of scripts: 26_  
 <br/>
 
 ## Rust Scripts
@@ -102,6 +102,7 @@ swift sh 1.balance.swift
 | [3.getaddress.swift](swift/3.getaddress.swift)                                          | Get an unused address from a wallet.                                                                                          |
 | [4.opreturn.swift](swift/4.opreturn.swift)                                       | Create a transaction with an OP_RETURN output.                                                                                |
 | [5.listunspentutxo.swift](swift/5.listunspentutxo.swift)                         | List the unspent outputs this wallet controls.                                                                                |
+| [6.descriptor-from-mnemonic.swift](swift/6.descriptor-from-mnemonic.swift)       | Create a BIP84 descriptor starting from a 12-word mnemonic.                                                                   |
 <br/><br/>
 
 <div align="center">
