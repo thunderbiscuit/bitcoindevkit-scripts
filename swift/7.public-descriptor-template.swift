@@ -22,7 +22,6 @@ do {
     print("The descriptor is \(descriptor.asString())")
     //wpkh([9122d9e0/84'/1'/0']tpubDCYVtmaSaDzTxcgvoP5AHZNbZKZzrvoNH9KARep88vESc6MxRqAp4LmePc2eeGX6XUxBcdhAmkthWTDqygPz2wLAyHWisD299Lkdrj5egY6/0/*)#zpaanzgu
 
-    
 } catch {
     print(error)
 }
