@@ -23,8 +23,7 @@ do {
 
     let txList: [TransactionDetails] = try wallet.listTransactions()
     txList.forEach { item in
-        print(item)
-        print("\n")
+        print("\(item) \n")
     }
     
 } catch {
