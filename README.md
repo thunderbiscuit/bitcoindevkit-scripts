@@ -86,6 +86,8 @@ swift sh 1.balance.swift
 | [8.transaction-details.main.kts](kotlin/8.transaction-details.main.kts)                 | Print transaction details for each transaction the wallet has completed.                                                      |
 | [9.private-descriptor-template.main.kts](kotlin/9.private-descriptor-template.main.kts) | Create private and public descriptors using descriptor templates.                                                             |
 | [10.create-tx-from-raw-bytes.main.kts](kotlin/10.create-tx-from-raw-bytes.main.kts)     | Create a Transaction object from raw bytes.                                                                                   |
+| [11.derive-custom-path.main.kts](kotlin/11.derive-custom-path.main.kts)                 | Create extended keys using custom derivation paths.                                                                           |
+| [12.basic-transaction.main.kts](kotlin/12.basic-transaction.main.kts)                   | Create a basic transaction that pays to 1 recipient.                                                                          |
 
 <br/><br/>
 
@@ -105,7 +107,6 @@ swift sh 1.balance.swift
 | [6.descriptor-from-mnemonic.swift](swift/6.descriptor-from-mnemonic.swift)              | Create a BIP84 descriptor starting from a 12-word mnemonic.                                                                   |
 | [7.public-descriptor-template.swift](swift/7.public-descriptor-template.swift)          | Create a public descriptor using descriptor templates.                                                                        |
 | [8.transaction-details.swift](swift/8.transaction-details.swift)                        | Print transaction details for each transaction the wallet has completed.                                                      |
-| [9.private-descriptor-template.swift](swift/9.private-descriptor-template.swift)        | Create private and public descriptors using descriptor templates.                                                             |
 <br/><br/>
 
 <div align="center">
