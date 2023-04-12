@@ -1,7 +1,7 @@
 # Readme
 This repo hosts a collection of scripts that make use of the [Bitcoin Development Kit](https://bitcoindevkit.org/) and some of its language bindings.
 
-_Total number of scripts: 30_  
+_Total number of scripts: 31_  
 <br/>
 
 ## Rust Scripts
@@ -107,7 +107,7 @@ swift sh 1.balance.swift
 | [6.descriptor-from-mnemonic.swift](swift/6.descriptor-from-mnemonic.swift)              | Create a BIP84 descriptor starting from a 12-word mnemonic.                                                                   |
 | [7.public-descriptor-template.swift](swift/7.public-descriptor-template.swift)          | Create a public descriptor using descriptor templates.                                                                        |
 | [8.transaction-details.swift](swift/8.transaction-details.swift)                        | Print transaction details for each transaction the wallet has completed.                                                      |
-
+| [9.private-descriptor-template.swift](swift/9.private-descriptor-template.swift)        | Create private and public descriptors using descriptor templates.                                                             |
 <br/><br/>
 
 <div align="center">
