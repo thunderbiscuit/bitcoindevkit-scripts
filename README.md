@@ -1,7 +1,7 @@
 # Readme
 This repo hosts a collection of scripts that make use of the [Bitcoin Development Kit](https://bitcoindevkit.org/) and some of its language bindings.
 
-_Total number of scripts: 32_  
+_Total number of scripts: 33_  
 <br/>
 
 ## Rust Scripts
@@ -99,16 +99,17 @@ swift sh 1.balance.swift
 
 | File                                                                                    | Task                                                                                                                          |
 |-----------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
-| [1.balance.swift](swift/1.balance.swift)                                                | Query an Electrum server for the balance of a wallet.                                                                         |
-| [2.blockinfo.swift](swift/2.blockinfo.swift)                                            | Query an Electrum server for the testnet blockchain height and latest block hash.                                             |
-| [3.getaddress.swift](swift/3.getaddress.swift)                                          | Get an unused address from a wallet.                                                                                          |
-| [4.opreturn.swift](swift/4.opreturn.swift)                                              | Create a transaction with an OP_RETURN output.                                                                                |
-| [5.listunspentutxo.swift](swift/5.listunspentutxo.swift)                                | List the unspent outputs this wallet controls.                                                                                |
-| [6.descriptor-from-mnemonic.swift](swift/6.descriptor-from-mnemonic.swift)              | Create a BIP84 descriptor starting from a 12-word mnemonic.                                                                   |
-| [7.public-descriptor-template.swift](swift/7.public-descriptor-template.swift)          | Create a public descriptor using descriptor templates.                                                                        |
-| [8.transaction-details.swift](swift/8.transaction-details.swift)                        | Print transaction details for each transaction the wallet has completed.                                                      |
-| [9.private-descriptor-template.swift](swift/9.private-descriptor-template.swift)        | Create private and public descriptors using descriptor templates.                                                             |
-| [10.create-tx-from-raw-bytes.swift](swift/10.create-tx-from-raw-bytes.swift)            | Create a Transaction object from raw bytes.                                                                                   |
+| [1.balance.swift](swift/1.balance.swift)                                                | Query an Electrum server for the balance of a wallet.                                                                                   |
+| [2.blockinfo.swift](swift/2.blockinfo.swift)                                            | Query an Electrum server for the testnet blockchain height and latest block hash.                                                                               |
+| [3.getaddress.swift](swift/3.getaddress.swift)                                          | Get an unused address from a wallet.                                                                                   |
+| [4.opreturn.swift](swift/4.opreturn.swift)                                              | Create a transaction with an OP_RETURN output.                                                                                   |
+| [5.listunspentutxo.swift](swift/5.listunspentutxo.swift)                                | List the unspent outputs this wallet controls.                                                                                 |
+| [6.descriptor-from-mnemonic.swift](swift/6.descriptor-from-mnemonic.swift)              | Create a BIP84 descriptor starting from a 12-word mnemonic.                                                                                 |
+| [7.public-descriptor-template.swift](swift/7.public-descriptor-template.swift)          | Create a public descriptor using descriptor templates.                                                                                |
+| [8.transaction-details.swift](swift/8.transaction-details.swift)                        | Print transaction details for each transaction the wallet has completed.                                                                                |
+| [9.private-descriptor-template.swift](swift/9.private-descriptor-template.swift)        | Create private and public descriptors using descriptor templates.                                                                                |
+| [10.create-tx-from-raw-bytes.swift](swift/10.create-tx-from-raw-bytes.swift)            | Create a Transaction object from raw bytes.                                                                                    |
+| [11.derive-custom-path.swift](swift/11.derive-custom-path.swift)                        | Create extended keys using custom derivation paths.                                                                                    |
 <br/><br/>
 
 <div align="center">
