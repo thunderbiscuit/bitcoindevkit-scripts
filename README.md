@@ -1,7 +1,7 @@
 # Readme
 This repo hosts a collection of scripts that make use of the [Bitcoin Development Kit](https://bitcoindevkit.org/) and some of its language bindings.
 
-_Total number of scripts: 33_  
+_Total number of scripts: 34_  
 <br/>
 
 ## Rust Scripts
@@ -110,6 +110,8 @@ swift sh 1.balance.swift
 | [9.private-descriptor-template.swift](swift/9.private-descriptor-template.swift)        | Create private and public descriptors using descriptor templates.                                                                                |
 | [10.create-tx-from-raw-bytes.swift](swift/10.create-tx-from-raw-bytes.swift)            | Create a Transaction object from raw bytes.                                                                                    |
 | [11.derive-custom-path.swift](swift/11.derive-custom-path.swift)                        | Create extended keys using custom derivation paths.                                                                                    |
+| [12.basic-transaction.swift](swift/12.basic-transaction.swift)                          | Create a basic transaction that pays to 1 recipient.                                                                                |
+
 <br/><br/>
 
 <div align="center">
