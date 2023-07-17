@@ -1,10 +1,10 @@
 /**
- * bdk-jvm 0.27.1
+ * bdk-jvm 0.29.2
  *
  * Create a transaction with an OP_RETURN output.
  */
 
-@file:DependsOn("org.bitcoindevkit:bdk-jvm:0.27.1")
+@file:DependsOn("org.bitcoindevkit:bdk-jvm:0.29.2")
 
 import org.bitcoindevkit.*
 
@@ -42,6 +42,6 @@ val (psbt, txDetails) = TxBuilder()
     .finish(wallet)
 
 println("Transaction details: $txDetails")
-wallet.sign(psbt)
+wallet.sign(psbt, null)
 val tx = psbt.extractTx()
 // blockchain.broadcast(tx)

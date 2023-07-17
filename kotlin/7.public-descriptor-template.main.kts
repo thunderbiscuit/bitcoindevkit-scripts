@@ -1,10 +1,10 @@
 /**
- * bdk-jvm 0.26.0
+ * bdk-jvm 0.29.2
  *
  * Create a public descriptor using descriptor templates.
  */
 
-@file:DependsOn("org.bitcoindevkit:bdk-jvm:0.26.0")
+@file:DependsOn("org.bitcoindevkit:bdk-jvm:0.29.2")
 
 import org.bitcoindevkit.*
 

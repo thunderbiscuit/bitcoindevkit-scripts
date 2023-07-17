@@ -1,10 +1,10 @@
 /**
- * bdk-jvm 0.27.1
+ * bdk-jvm 0.29.2
  *
  * Create a transaction with an OP_RETURN output.
  */
 
-@file:DependsOn("org.bitcoindevkit:bdk-jvm:0.27.1")
+@file:DependsOn("org.bitcoindevkit:bdk-jvm:0.29.2")
 
 import org.bitcoindevkit.*
 
@@ -40,5 +40,5 @@ val (psbt, txDetails) = TxBuilder()
         .addData(message)
         .finish(wallet)
 
-println("OP_RETURN transaction created: ${wallet.sign(psbt)}")
+println("OP_RETURN transaction created: ${wallet.sign(psbt, null)}")
 println("Transaction details: $txDetails")

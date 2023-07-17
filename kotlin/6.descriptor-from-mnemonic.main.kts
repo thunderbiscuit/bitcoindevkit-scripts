@@ -1,10 +1,10 @@
 /**
- * bdk-jvm 0.25.0
+ * bdk-jvm 0.29.2
  *
  * Create a BIP84 descriptor starting from a 12-word mnemonic.
  */
 
-@file:DependsOn("org.bitcoindevkit:bdk-jvm:0.25.0")
+@file:DependsOn("org.bitcoindevkit:bdk-jvm:0.29.2")
 
 import org.bitcoindevkit.*
 

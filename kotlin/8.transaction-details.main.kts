@@ -1,10 +1,10 @@
 /**
- * bdk-jvm 0.26.0
+ * bdk-jvm 0.29.2
  *
  * Print transaction details for each transaction the wallet has completed.
  */
 
-@file:DependsOn("org.bitcoindevkit:bdk-jvm:0.26.0")
+@file:DependsOn("org.bitcoindevkit:bdk-jvm:0.29.2")
 
 import org.bitcoindevkit.*
 
@@ -26,7 +26,7 @@ val balance = wallet.getBalance().total
 println("Wallet descriptor is ${descriptor.asStringPrivate()}")
 println("The wallet balance is $balance\n")
 
-val txList: List<TransactionDetails> = wallet.listTransactions()
+val txList: List<TransactionDetails> = wallet.listTransactions(false)
 txList.forEach {
     println("$it \n")
 }
