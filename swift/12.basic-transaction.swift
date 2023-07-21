@@ -1,6 +1,6 @@
 #!/usr/bin/swift sh
 
-import BitcoinDevKit  // https://github.com/bitcoindevkit/bdk-swift.git == 0.27.1
+import BitcoinDevKit  // https://github.com/bitcoindevkit/bdk-swift.git == 0.29.0
 
 /*
  * Create a transaction with an OP_RETURN output.
@@ -44,7 +44,7 @@ do {
         .finish(wallet: wallet)
         
     print("Transaction details: \(txBuilderResult.transactionDetails)")
-    try wallet.sign(psbt: txBuilderResult.psbt)
+    try wallet.sign(psbt: txBuilderResult.psbt, signOptions: nil)
     let tx = txBuilderResult.psbt.extractTx()
     // blockchain.broadcast(transaction: tx)
     

@@ -1,6 +1,6 @@
 #!/usr/bin/swift sh
 
-import BitcoinDevKit  // https://github.com/bitcoindevkit/bdk-swift.git == 0.26.0
+import BitcoinDevKit  // https://github.com/bitcoindevkit/bdk-swift.git == 0.29.0
 
 class LogProgress : BitcoinDevKit.Progress {
     func update(progress: Float, message: String?) {
@@ -29,7 +29,7 @@ do {
     try wallet.sync(blockchain: blockchain, progress: progress)
 
     let lastUnusedAddress = try wallet.getAddress(addressIndex: AddressIndex.lastUnused)
-    print("The last unused address for this wallet is \(lastUnusedAddress.address) at index \(lastUnusedAddress.index)")
+    print("The last unused address for this wallet is \(lastUnusedAddress.address.asString()) at index \(lastUnusedAddress.index)")
 } catch {
     print(error)
 }

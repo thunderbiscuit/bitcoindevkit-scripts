@@ -1,6 +1,6 @@
 #!/usr/bin/swift sh
 
-import BitcoinDevKit  // https://github.com/bitcoindevkit/bdk-swift.git == 0.26.0
+import BitcoinDevKit  // https://github.com/bitcoindevkit/bdk-swift.git == 0.29.0
 
 class LogProgress : BitcoinDevKit.Progress {
     func update(progress: Float, message: String?) {
@@ -49,7 +49,7 @@ do {
         .addData(data: messageBytes)
         .finish(wallet: wallet)
 
-    let opReturnTx = try wallet.sign(psbt: txBuilderResult.psbt)
+    let opReturnTx = try wallet.sign(psbt: txBuilderResult.psbt, signOptions: nil)
 
     print("OP_RETURN transaction created: \(opReturnTx)")
     print("Transaction details: \(txBuilderResult.transactionDetails)")

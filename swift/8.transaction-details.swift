@@ -1,6 +1,6 @@
 #!/usr/bin/swift sh
 
-import BitcoinDevKit  // https://github.com/bitcoindevkit/bdk-swift.git == 0.26.0
+import BitcoinDevKit  // https://github.com/bitcoindevkit/bdk-swift.git == 0.29.0
 
 do {
     let descriptor = try Descriptor(
@@ -21,7 +21,7 @@ do {
     print("Wallet descriptor is \(descriptor.asStringPrivate())")
     print("The wallet balance is \(balance)\n")
 
-    let txList: [TransactionDetails] = try wallet.listTransactions()
+    let txList: [TransactionDetails] = try wallet.listTransactions(includeRaw: false)
     txList.forEach { item in
         print("\(item) \n")
     }

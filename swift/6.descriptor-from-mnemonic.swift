@@ -1,6 +1,6 @@
 #!/usr/bin/swift sh
 
-import BitcoinDevKit  // https://github.com/bitcoindevkit/bdk-swift.git == 0.26.0
+import BitcoinDevKit  // https://github.com/bitcoindevkit/bdk-swift.git == 0.29.0
 
 do {
     let mnemonic: Mnemonic = try Mnemonic.fromString(mnemonic: "fire alter tide over object advance diamond pond region select tone pole")
