@@ -24,5 +24,5 @@ val wallet = Wallet(descriptor, null, Network.TESTNET, databaseConfig)
 
 wallet.sync(blockchain, LogProgress)
 
-val lastUnusedAddress = wallet.getAddress(AddressIndex.LastUnused)
-println("The last unused address for this wallet is ${lastUnusedAddress.address} at index ${lastUnusedAddress.index}")
+val lastUnusedAddress: AddressInfo = wallet.getAddress(AddressIndex.LastUnused)
+println("The last unused address for this wallet is ${lastUnusedAddress.address.asString()} at index ${lastUnusedAddress.index}")
