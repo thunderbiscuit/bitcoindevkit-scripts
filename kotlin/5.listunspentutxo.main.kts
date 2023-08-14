@@ -23,7 +23,7 @@ val blockchain = Blockchain(blockchainConfig)
 wallet.sync(blockchain, null)
 
 val unspentUtxos: List<LocalUtxo> = wallet.listUnspent()
-println("There are ${unspentUtxos.size} number of outputs in this wallet")
+println("There are ${unspentUtxos.size} unspent outputs in this wallet")
 unspentUtxos.forEach {
     println(it)
 }
