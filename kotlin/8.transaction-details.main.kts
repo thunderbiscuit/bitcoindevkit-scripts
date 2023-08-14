@@ -26,7 +26,7 @@ val balance = wallet.getBalance().total
 println("Wallet descriptor is ${descriptor.asStringPrivate()}")
 println("The wallet balance is $balance\n")
 
-val txList: List<TransactionDetails> = wallet.listTransactions(false)
+val txList: List<TransactionDetails> = wallet.listTransactions(includeRaw = false)
 txList.forEach {
     println("$it \n")
 }
