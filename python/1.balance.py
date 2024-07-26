@@ -1,37 +1,39 @@
-# bdkpython 0.26.0
+# bdkpython 1.0.0a11
 # 
 # Query an Electrum server for the total balance of a wallet.
 
 import bdkpython as bdk
 from utilities import check_bdk_version
 
-check_bdk_version(original_major_version=0, original_minor_version=26)
+check_bdk_version(original_major_version=1, original_minor_version=0)
 
 descriptor = bdk.Descriptor(
-    "wpkh([c258d2e4/84h/1h/0h]tpubDDYkZojQFQjht8Tm4jsS3iuEmKjTiEGjG6KnuFNKKJb5A6ZUCUZKdvLdSDWofKi4ToRCwb9poe1XdqfUnP4jaJjCB2Zwv11ZLgSbnZSNecE/0/*)",
-    bdk.Network.TESTNET,
+    "wpkh(tprv8ZgxMBicQKsPf2qfrEygW6fdYseJDDrVnDv26PH5BHdvSuG6ecCbHqLVof9yZcMoM31z9ur3tTYbSnr1WBqbGX97CbXcmp5H6qeMpyvx35B/84h/1h/0h/0/*)",
+    bdk.Network.SIGNET,
 )
-db_config = bdk.DatabaseConfig.MEMORY()
-blockchain_config = bdk.BlockchainConfig.ELECTRUM(
-    bdk.ElectrumConfig(
-        url="ssl://electrum.blockstream.info:60002",
-        socks5=None,
-        retry=5,
-        timeout=None,
-        stop_gap=100,
-        validate_domain=True,
-    )
+change_descriptor = bdk.Descriptor(
+    "wpkh(tprv8ZgxMBicQKsPf2qfrEygW6fdYseJDDrVnDv26PH5BHdvSuG6ecCbHqLVof9yZcMoM31z9ur3tTYbSnr1WBqbGX97CbXcmp5H6qeMpyvx35B/84h/1h/0h/1/*)",
+    bdk.Network.SIGNET
 )
-blockchain = bdk.Blockchain(blockchain_config)
 
-wallet = bdk.Wallet(
-             descriptor=descriptor,
-             change_descriptor=None,
-             network=bdk.Network.TESTNET,
-             database_config=db_config,
-         )
+wallet = bdk.Wallet.new_no_persist(
+    descriptor=descriptor,
+    change_descriptor=change_descriptor,
+    network=bdk.Network.SIGNET,
+)
 
-# print wallet balance
-wallet.sync(blockchain, None)
+electrum_client = bdk.ElectrumClient("ssl://mempool.space:60602")
 balance = wallet.get_balance()
-print(f"Wallet balance is: {balance.total}")
+print(f"Wallet balance is: {balance.total.to_sat()}")
+
+full_scan_request = wallet.start_full_scan()
+update = electrum_client.full_scan(
+    full_scan_request=full_scan_request,
+    stop_gap=10,
+    batch_size=10,
+    fetch_prev_txouts=False
+)
+wallet.apply_update(update)
+
+new_balance = wallet.get_balance()
+print(f"Wallet balance after sync is: {new_balance.total.to_sat()}")
