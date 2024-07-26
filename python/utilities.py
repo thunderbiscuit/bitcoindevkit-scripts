@@ -9,5 +9,5 @@ def check_bdk_version(original_major_version, original_minor_version, package_na
     # warning: v0.25 vs. v0.26
     # no warning: v0.25 vs v0.25.2
     if original_version != installed_version_without_patch:
-        text = f"This script was written with {package_name} v{original_version}, but the installed version is v{installed_version} which may cause errors."
+        text = f"\n\n!!!\nThis script was written with {package_name} v{original_version}, but the installed version is v{installed_version} which may cause errors.\n!!!\n"
         warnings.warn(text)
