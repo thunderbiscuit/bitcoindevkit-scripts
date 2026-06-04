@@ -1,0 +1,11 @@
+[doc("List all available commands")]
+@list:
+  just --list --unsorted
+  
+[doc("Run all scripts")]
+@run:
+  for script in $(find . -name "*.main.kts" | sort); do \
+    echo ""; \
+    echo "Running → $(basename $script)"; \
+    kotlin "$script"; \
+  done
