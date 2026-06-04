@@ -1,12 +1,13 @@
 /**
- * bdk-jvm 0.32.1
- *
  * Create a BIP84 descriptor starting from a 12-word mnemonic.
  */
 
 @file:DependsOn("org.bitcoindevkit:bdk-jvm:0.32.1")
 
-import org.bitcoindevkit.*
+import org.bitcoindevkit.DerivationPath
+import org.bitcoindevkit.DescriptorSecretKey
+import org.bitcoindevkit.Mnemonic
+import org.bitcoindevkit.Network
 
 val mnemonic: Mnemonic = Mnemonic.fromString("fire alter tide over object advance diamond pond region select tone pole")
 val bip32RootKey: DescriptorSecretKey = DescriptorSecretKey(

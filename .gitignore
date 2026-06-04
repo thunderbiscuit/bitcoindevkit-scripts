@@ -2,3 +2,5 @@
 tests/
 output.json
 .DS_Store
+*.sqlite3
+.local/

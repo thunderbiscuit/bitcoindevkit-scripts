@@ -1,12 +1,13 @@
 /**
- * bdk-jvm 0.32.1
- *
  * Create a public descriptor using descriptor templates.
  */
 
 @file:DependsOn("org.bitcoindevkit:bdk-jvm:0.32.1")
 
-import org.bitcoindevkit.*
+import org.bitcoindevkit.Descriptor
+import org.bitcoindevkit.DescriptorPublicKey
+import org.bitcoindevkit.KeychainKind
+import org.bitcoindevkit.Network
 
 // {
 //   "fingerprint": "9122d9e0",

@@ -1,12 +1,11 @@
 /**
- * bdk-jvm 0.32.1
- *
  * Create extended keys using custom derivation paths.
  */
 
 @file:DependsOn("org.bitcoindevkit:bdk-jvm:0.32.1")
 
-import org.bitcoindevkit.*
+import org.bitcoindevkit.DerivationPath
+import org.bitcoindevkit.DescriptorSecretKey
 
 // {
 //   "fingerprint": "9122d9e0",

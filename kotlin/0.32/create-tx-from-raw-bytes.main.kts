@@ -1,6 +1,4 @@
 /**
- * bdk-jvm 0.32.1
- *
  * Create a Transaction object from raw bytes.
  */
 
@@ -8,10 +6,10 @@
 @file:DependsOn("com.google.guava:guava:31.1-jre")
 @file:DependsOn("org.bitcoindevkit:bdk-jvm:0.32.1")
 
-import org.bitcoindevkit.*
 import com.google.common.io.BaseEncoding
+import org.bitcoindevkit.Transaction
 
-// convert a hexadecimal string to a List of UByte
+// Convert a hexadecimal string to a List of UByte
 fun String.toUByteList(): List<UByte> {
     val byteArray:  ByteArray = BaseEncoding.base16().decode(this.uppercase())
     val uByteList: List<UByte> = byteArray.map { byte ->

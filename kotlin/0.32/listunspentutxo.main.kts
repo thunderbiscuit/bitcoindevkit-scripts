@@ -1,12 +1,17 @@
 /**
- * bdk-jvm 0.32.1
- *
  * List the unspent outputs this wallet controls.
  */
 
 @file:DependsOn("org.bitcoindevkit:bdk-jvm:0.32.1")
 
-import org.bitcoindevkit.*
+import org.bitcoindevkit.Blockchain
+import org.bitcoindevkit.BlockchainConfig
+import org.bitcoindevkit.DatabaseConfig
+import org.bitcoindevkit.Descriptor
+import org.bitcoindevkit.ElectrumConfig
+import org.bitcoindevkit.LocalUtxo
+import org.bitcoindevkit.Network
+import org.bitcoindevkit.Wallet
 
 val database = DatabaseConfig.Memory
 val blockchainConfig = BlockchainConfig.Electrum(

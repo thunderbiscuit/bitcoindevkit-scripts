@@ -1,12 +1,13 @@
 /**
- * bdk-jvm 0.32.1
- *
- * Query an Electrum server for the testnet blockchain height and latest block hash.
+ * Query an Electrum server for the Regtest blockchain height and latest block hash.
  */
 
 @file:DependsOn("org.bitcoindevkit:bdk-jvm:0.32.1")
 
-import org.bitcoindevkit.*
+import org.bitcoindevkit.Blockchain
+import org.bitcoindevkit.BlockchainConfig
+import org.bitcoindevkit.DatabaseConfig
+import org.bitcoindevkit.ElectrumConfig
 
 val memoryDatabaseConfig = DatabaseConfig.Memory
 
